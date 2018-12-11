@@ -1,0 +1,11 @@
+version: '3'
+
+services:  
+
+    website:
+        build:
+            context: ./website
+            args:
+                - configuration=production
+        ports:
+            - 4200:4200
